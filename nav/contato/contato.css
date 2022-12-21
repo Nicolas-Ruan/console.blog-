@@ -125,29 +125,3 @@ main .container {
    height: 100vh;
 }
 
-main .container .title{
-   text-align: center;
-   margin: 40px 0px; 
-}
-
-main .container .title h1{
-   color: black;
-   font-size: 40px;
-}
-
-main .container .img{
-   display: flex;
-   justify-content: center;
-   margin: 40px 0px;
-}
-
-main .container .img img{
-   width: 500px;
-   height: 400px;
-}
-
-main .container p{
-   color: black;
-   font-size: 19px;
-   text-align: justify;
-}
