@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   text-decoration: none;
+   color: white;
+   font-family: 'Chivo Mono', monospace;
+}
+
+
+/* header */
+
+header {
+   height: 75px;
+   width: 100vw;
+   background-color: #5F74A7;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   position: fixed;
+}
+
+header a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 10%;
+   height: 100%;
+   cursor: pointer;
+}
+
+header .logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+   padding: 0 10px;
+}
+
+header .logo:hover {
+   background-color: #293C6A;
+   transition: 0.2s all ease-in-out;
+   transform: scale(1.1);
+}
+
+header nav ul {
+   display: flex;
+   gap: 15px;
+}
+
+header nav ul li .search {
+   width: 50px;
+}
+
+header nav ul li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+}
+
+header nav ul li a {
+   width: 95px;
+   height: 75px;
+}
+
+header nav ul li a .menu-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   padding: 0 10px;
+}
+
+header nav ul li a .menu-box:hover {
+   background-color: #293C6A;
+   transition: 0.2s all ease-in-out;
+   transform: scale(1.1);
+}
+
+header nav ul .social-ul li a .menu-box-social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 3rem;
+   height: 100%;
+}
+
+header nav ul .social-ul li a .menu-box-social:hover {
+   background-color: #293C6A;
+   transition: 0.2s all ease-in-out;
+   transform: scale(1.1);
+}
+
+
+header nav ul .social-ul li a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+
+/* main */
+
+main {
+   height: auto;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+main .container {
+   width: 45%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+main .container a {
+   width: 100%;
+}
+
+main .container .date-container {
+   text-align: center;
+   width: 100%;
+   height: 50px;
+   margin: 20px 0;
+}
+
+main .container .date-container .date {
+   background-color: #293C6A;
+   text-align: center;
+   width: 35%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+
+}
+
+main .container .post {
+   width: 100%;
+   height: 19%;
+   margin: 10px 0;
+   background-color: #5F74A7;
+   display: flex;
+   flex-direction: column;
+
+   cursor: pointer;
+   transition-duration: 0.2s;
+}
+
+main .container .post:hover {
+   transform: scale(1.02);
+   -webkit-box-shadow: 9px 9px 0px -4px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 9px 9px 0px -4px rgba(0, 0, 0, 0.75);
+   box-shadow: 9px 9px 0px -4px rgba(0, 0, 0, 0.75);
+}
+
+main .container .post .title {
+   width: 95%;
+   height: 80%;
+   margin: 14px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+main .container .post .title h1 {
+   margin: 5px 10px;
+}
+
+main .container .post .tags {
+   width: 100%;
+   height: 50%;
+}
+
+main .container .post .tags p{
+   margin: 10px;
+   position: absolute;
+   right: 10;
+   bottom: 1;
+}
+
+main .container .post .tags a {
+   margin: 0px 10px;
+}
+
+main .container .post .tags p a:hover {
+   text-decoration: underline;
+}
