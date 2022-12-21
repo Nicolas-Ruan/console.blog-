@@ -9,6 +9,10 @@
    font-family: 'Chivo Mono', monospace;
 }
 
+html{
+   overflow-x: hidden;
+}
+
 
 /* header */
 
@@ -19,7 +23,6 @@ header {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   position: fixed;
 }
 
 header a {
@@ -120,81 +123,31 @@ main {
 main .container {
    width: 45%;
    height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
 }
 
-main .container a {
-   width: 100%;
-}
-
-main .container .date-container {
+main .container .title{
    text-align: center;
-   width: 100%;
-   height: 50px;
-   margin: 20px 0;
+   margin: 40px 0px; 
 }
 
-main .container .date-container .date {
-   background-color: #293C6A;
-   text-align: center;
-   width: 35%;
-   height: 100%;
+main .container .title h1{
+   color: black;
+   font-size: 40px;
+}
+
+main .container .img{
    display: flex;
    justify-content: center;
-   align-items: center;
-   cursor: pointer;
-
+   margin: 40px 0px;
 }
 
-main .container .post {
-   width: 100%;
-   height: 19%;
-   margin: 10px 0;
-   background-color: #5F74A7;
-   display: flex;
-   flex-direction: column;
-
-   cursor: pointer;
-   transition-duration: 0.2s;
+main .container .img img{
+   width: 500px;
+   height: 400px;
 }
 
-main .container .post:hover {
-   transform: scale(1.02);
-   -webkit-box-shadow: 9px 9px 0px -4px rgba(0, 0, 0, 0.75);
-   -moz-box-shadow: 9px 9px 0px -4px rgba(0, 0, 0, 0.75);
-   box-shadow: 9px 9px 0px -4px rgba(0, 0, 0, 0.75);
-}
-
-main .container .post .title {
-   width: 95%;
-   height: 80%;
-   margin: 14px;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.5)
-}
-
-main .container .post .title h1 {
-   margin: 5px 10px;
-}
-
-main .container .post .tags {
-   width: 100%;
-   height: 50%;
-}
-
-main .container .post .tags p{
-   margin: 10px;
-   position: absolute;
-   right: 10;
-   bottom: 1;
-}
-
-main .container .post .tags a {
-   margin: 0px 10px;
-}
-
-main .container .post .tags p a:hover {
-   text-decoration: underline;
+main .container p{
+   color: black;
+   font-size: 19px;
+   text-align: justify;
 }
