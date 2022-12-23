@@ -224,13 +224,15 @@ main .container .post .title h1 {
 main .container .post .tags {
    width: 100%;
    height: 50%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
 }
 
 main .container .post .tags p {
-
    position: absolute;
-   right: 10;
-   bottom: 1;
+   margin-left: 17px;
 }
 
 main .container .post .tags a {
